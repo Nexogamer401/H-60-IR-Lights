@@ -68,6 +68,18 @@ class interaction {
             animEnd="_this call vtx_uh60_misc_fnc_toggleLights";
             clickSound="hct_Switch_Sound";
         }; // Lights_position
+        class Lights_mode {
+            positionType="static";
+            position="b_lights_mode";
+            label="External Light Mode";
+            radius=BTN_RADIUS_SWITCH;
+            animation="Switch_lights_cockpit";
+            animSpeed=0;
+            animStates[] = {0,0.5,1};
+            animLabels[] = {"NORM","SEARCH LT", "ALL IR"};
+            animEnd="_this call vtx_uh60_misc_fnc_toggleLightMode";
+            clickSound="hct_Switch_Sound";
+        }; // Lights_position
         class fuelPump {
             positionType="static";
             position="b_fuelpump";
